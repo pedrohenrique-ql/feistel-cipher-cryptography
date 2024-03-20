@@ -2,17 +2,17 @@ from socket import *
 from feistel_cipher import feistel_cipher
 
 serverName = '127.0.0.1'
-serverPort = 12000
+serverPort = 12001
 clientSocket = socket(AF_INET, SOCK_STREAM)
 
-key = b"mysecretk"
+key = [3, 2, 0, 1]
 
 #Conecta ao servidor
 clientSocket.connect((serverName,serverPort))
 
 #Recebe mensagem do usuario e envia ao servidor
 message = input('Digite uma frase: ')
-encoded_message = feistel_cipher(bytes(message, 'utf-8'), key)
+encoded_message = feistel_cipher(bytes(message, 'UTF-8'), key)
 
 print('Mensagem do usuário:', message)
 print('Mensagem do usuário criptografada:', encoded_message)

@@ -1,7 +1,7 @@
 from socket import *
 from feistel_cipher import feistel_cipher
 
-serverPort = 12000
+serverPort = 12001
 #Cria o Socket TCP (SOCK_STREAM) para rede IPv4 (AF_INET)
 serverSocket = socket(AF_INET,SOCK_STREAM)
 serverSocket.bind(('',serverPort))
@@ -10,7 +10,7 @@ serverSocket.listen(1)
 
 print("Servidor pronto para receber mensagens. Digite Ctrl+C para terminar.")
 
-key = b"mysecretk"
+key = [3, 2, 0, 1]
 
 while 1:
   #Cria um socket para tratar a conexao do cliente
