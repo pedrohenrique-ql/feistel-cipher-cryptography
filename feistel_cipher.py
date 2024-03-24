@@ -21,12 +21,8 @@ def xor(a, b):
 
 
 # key = [3, 2, 0, 1]
-# text = bytes("abcdefh", 'UTF-8')
+# text = bytes("abcdefgh", 'UTF-8')
 
 # encoded = feistel_cipher(text, key)
 # print(encoded)
 # print(feistel_cipher(encoded, key))
-
-
-# 3210
-# efgh
