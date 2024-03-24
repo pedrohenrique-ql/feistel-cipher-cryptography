@@ -2,7 +2,7 @@ from socket import *
 from feistel_cipher import feistel_cipher
 
 serverName = '127.0.0.1'
-serverPort = 12001
+serverPort = 12000 
 clientSocket = socket(AF_INET, SOCK_STREAM)
 
 key = [3, 2, 0, 1]

@@ -1,7 +1,7 @@
 from socket import *
 from feistel_cipher import feistel_cipher
 
-serverPort = 12001
+serverPort = 12000
 #Cria o Socket TCP (SOCK_STREAM) para rede IPv4 (AF_INET)
 serverSocket = socket(AF_INET,SOCK_STREAM)
 serverSocket.bind(('',serverPort))
